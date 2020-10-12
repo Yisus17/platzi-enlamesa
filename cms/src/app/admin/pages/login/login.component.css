@@ -1,10 +1,53 @@
+#container {
+  display: flex; /* establish flex container */
+  flex-direction: column; /* make main-axis vertical */
+  justify-content: center; /* align items vertically, in this case */
+  align-items: center; /* align items horizontally, in this case */
+  height: 300px; /* for demo purposes */
+
+}
+
 .box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 25%;
+  margin: 5px;
+  text-align: center;
+}
+
+mat-form-field{
+  width: 90%;
+}
+
+
+#login-card-actions{
+  text-align: right;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+}
+
+/* Small devices (vertical phones, 320px and up) */
+@media (min-width: 320px) {
+  .box {
+    width: 95%;
   }
-  
-  .box div {
-    width: 33%;
-    height: auto;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .box {
+    width: 50%;
   }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  
+  .box {
+    width: 25%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1024px) { 
+  .box {
+    width: 30%;
+  }
+ }

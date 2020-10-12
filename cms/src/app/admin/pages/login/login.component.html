@@ -1,9 +1,41 @@
-<p>
-    <mat-toolbar color="primary">
-        <span></span>
-    </mat-toolbar>
-</p>
+<mat-toolbar color="primary">
+    <span>En la mesa | CMS</span>
+</mat-toolbar>
 
-<div class="box">
-    <div>HOLA</div>
+
+
+
+<div id="container"><!-- flex container -->
+    <div class="box" id="bluebox">
+        <form [formGroup]="form" (ngSubmit)="loginRequest()">
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>
+                        Login
+                    </mat-card-title>
+                </mat-card-header>
+        
+                <mat-card-content>
+                    <div class="col-lg">
+                        <mat-form-field>
+                            <input placeholder="Username" formControlName="username" matInput type="text">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-lg">
+                        <mat-form-field>
+                            <input placeholder="Password" formControlName="password" matInput type="password">
+                        </mat-form-field>
+                    </div>
+                </mat-card-content>
+                <mat-card-actions id="login-card-actions">
+                    <button mat-raised-button color="primary" type="submit">
+                        Aceptar
+                    </button>
+                </mat-card-actions>
+        
+            </mat-card>
+        </form>
+    </div>
 </div>
+
+
